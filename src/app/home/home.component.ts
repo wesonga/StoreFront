@@ -15,7 +15,7 @@ export class HomeComponent {
     this.productsService
       .getProducts('http://localhost:3000/clothes', { page: 0, perPage: 5 })
       .subscribe((products) => {
-        console.log(products);
+        console.log(products.items);
       });
   }
 }

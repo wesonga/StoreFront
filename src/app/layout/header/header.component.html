@@ -1,3 +1,19 @@
-<header class="wrapper row full-center">
-  <img src="assets/images/oc-logo.svg" alt="Logo image" class="logo">
+<header class="wrapper column full-center">
+  <img
+    ngSrc="assets/images/oc-logo.svg"
+    alt="Logo image"
+    class="logo"
+    height="352"
+    width="2667"
+  />
+
+  <div class="row gap-1">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/about-us" routerLinkActive="active">About</a>
+  </div>
 </header>

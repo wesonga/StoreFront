@@ -7,6 +7,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PricePipe implements PipeTransform {
   transform(value: unknown, ...args: unknown[]): unknown {
     //Append a dollar sign
-    return `${value}$`;
+    return `${value}`;
   }
 }

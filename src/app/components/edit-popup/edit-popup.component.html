@@ -5,7 +5,7 @@
   [closable]="false"
 >
   <!--  Name  -->
-  <div class="column gap-1">
+  <div class="column gap-1 form-wrapper ">
     <div class="row gap-05">
       <span class="price-label">Name: </span>
       <input type="text" [(ngModel)]="product.name" />
@@ -27,6 +27,7 @@
     <p-rating
       [(ngModel)]="product.rating"
       iconCancelClass="hidden"
+      class="rating"
     ></p-rating>
 
   </div>
